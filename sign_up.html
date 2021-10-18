@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/pop_ups.css">
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/login_signup.css" />
+		<!-- <link rel="stylesheet" href="css/pop_ups.css"> -->
+		
+		<!-- google font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Sign Up</title>
+	</head>
+	<body>
+		<header class="form-header">
+			<a href="./index.html"
+				><img src="assets/images/logo.png" alt="MoneyBox Logo"
+			/></a>
+			<h1><a href="./index.html">MoneyBox</a></h1>
+		</header>
+		<main>
+			<div class="form-container">
+				<h2>Create a Secure Account</h2>
+				<p>Start your journey to Financial Freedom</p>
+				<form action="" id="sign_up_form" name="sign_up_form" onsubmit="return validateForm(event)">
+					<label for="name">First Name</label>
+					<input
+						type="text"
+						name="First Name"
+						id="first_name"
+						autocomplete="cc-given-name"
+						placeholder="Your First Name"
+						required
+					/>
+					<label for="name">Last Name</label>
+					<input
+						type="text"
+						name="Last Name"
+						id="last_name"
+						autocomplete="cc-family-name"
+						placeholder="Your Last Name"
+						required
+					/>
+
+					<label for="email">Email Address</label>
+					<input
+						type="email"
+						name="Email"
+						id="email"
+						placeholder="Enter Your Email Address"
+						required
+					/>
+					<label for="text">Username</label>
+					<input
+						type="text"
+						name="Username"
+						autocomplete="username"
+						id="username"
+						placeholder="Enter Username"
+						required
+					/>
+
+					<label for="tel">Phone Number</label>
+					<input
+						type="tel"
+						name="Phone"
+						id="phone"
+						placeholder="Enter Your Active Phone"
+						required
+						autocomplete="mobile"
+						inputmode="numeric"
+					/>
+
+					<label for="password">Password</label>
+					<div class="pswd">
+						<img src="https://cdn0.iconfinder.com/data/icons/feather/96/eye-16.png" alt="eye" class="eye"/>
+						<input
+						type="password"
+						name="Password"
+						id="password"
+						placeholder="Choose a Password"
+						required
+						autocomplete="new-password"
+						/>
+					</div>
+					
+
+					<label for="password">Confirm Password</label>
+					<div class="pswd">
+						<img src="https://cdn0.iconfinder.com/data/icons/feather/96/eye-16.png" alt="eye" class="eye"/>
+						<input
+						type="password"
+						name="Confirm Password"
+						id="confirm_password"
+						autocomplete="new-password"
+						placeholder="Confirm Your Password"
+						required
+						/>
+					</div>
+					
+					<input type="submit" value="CREATE AN ACCOUNT" id="submit" />
+				</form>
+				<div class="footer">
+					<p>Already have an Account? <a href="login.html">Login</a></p>
+				</div>
+			</div>
+		</main>
+
+		<div class="modal confirmation_modal" id="sign_up_confirmation">
+			<div class="modal_position">
+				<section class="popup__container">
+					<h1>Sign Up Successful!</h1>
+					<p>Please wait, you will be redirected to login</p>
+				</section>
+			</div>
+		</div>
+		<script src="./scripts/sign_up.js"></script>
+	</body>
+</html>

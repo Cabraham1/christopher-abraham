@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- document title icon of varying sizes-->
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/assets/images/favicon_io/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/assets/images/favicon_io/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/assets/images/favicon_io/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="/site.webmanifest" />
+		<!-- css stylesheet -->
+		<link rel="stylesheet" href="./css/pop_ups.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/login_signup.css" />
+		<link rel="stylesheet" href="./css/dashboard_home.css" />
+		<link rel="stylesheet" href="./css/dashboard_account.css" />
+		
+		<title>MoneyBox | My Account</title>
+	</head>
+	<body>
+		<!-- <div class="dummy"></div> -->
+		<nav>
+			<div class="top-bar">
+				<a href="#">?</a>
+				<a href="#" class="account-btn">Library</a>
+				<a href="#" id="notification-btn"><img src="./assets/images/bell_icon.png" alt="Notification Icon" /></a>
+				<a href="#" id="username_display">Okoroji Victor</a>
+				<a href="#"
+					><div class="rounded-border">
+						<img src="./assets/images/avatar2 2.jpg" alt="Victor's Portrait" /></div
+				></a>
+			</div>
+			<div class="nav-bar-left">
+				<header>
+					<div class="hamburger">
+						<div class="harm-bars"></div>
+						<div class="harm-bars"></div>
+						<div class="harm-bars"></div>
+					</div>
+					<div class="name-n-logo">
+						<a href="./index.html"><img src="./assets/images/logo.png" alt="MoneyBox Logo" /></a>
+						<h1><a href="./index.html">MoneyBox</a></h1>
+					</div>
+				</header>
+				<div class="nav-item">
+					<img src="./assets/images/home-icon.svg" alt="Home Icon" />
+					<a href="./dashboard_home.html">Home</a>
+				</div>
+				<div class="nav-item">
+					<img src="./assets/images/cohort-group.svg" alt="Cohort Group Icon" />
+					<a href="./dashboard_cohort.html">Cohorts</a>
+				</div>
+				<div class="nav-item active">
+					<img src="./assets/images/account_icon.svg" alt="Account Icon" />
+					<a href="./dashboard_account.html">Account</a>
+				</div>
+				<div class="nav-item">
+					<img src="./assets/images/referrals.svg" alt="Referral Icon" />
+					<a href="./dashboard_referral.html">Referrals</a>
+				</div>
+				<div class="nav-item">
+					<img src="./assets/images/History.svg" alt="History Icon" />
+					<a href="./dashboard_history.html">History</a>
+				</div>
+
+				<div class="nav-item" id="logout">
+					<img src="./assets/images/logout-icon.svg" alt="Logout Icon" />
+					<a href="#">Logout</a>
+				</div>
+			</div>
+		</nav>
+		<main>
+			<section class="dashboard-top">
+				<p class="greet-user">Account Status <a href="#">Verified</a></p>
+				<div>
+					<button class="account-btn">Quick Save</button>
+					<button class="account-btn">Withdrawal</button>
+				</div>
+			</section>
+			<section class="account-profile">
+				<div class="account-container account-info">
+					<h3>My Account</h3>
+					<div class="account">
+						<p>Wallet Balance: &#8358;5000</p>
+						<button class="account-btn" id="fund-wallet-btn"> Fund Wallet </button>
+					</div>
+					<div class="account">
+						<p>Manage Bank Account</p>
+						<button class="account-btn" id="bvn-btn">Action</button>
+					</div>
+					<div class="account">
+						<p>GT.Mastercard</p>
+						<button class="account-btn" id="add-debitcard">Add Debit Card</button>
+					</div>
+					<div class="account">
+						<p>UBA, Savings Account</p>
+						<button class="account-btn" id="add-bank-btn"> Add Bank Account </button>
+					</div>
+					<div class="account">
+						<p>#5,000</p>
+						<a href="./dashboard_referral.html"> Referral Balaces</a>
+					</div>
+				</div>
+				<div class="account-container">
+					<div class="list-grid-entry-body">
+						<div class="rounded-border">
+							<img src="./assets/images/avatar2.jpg" alt="Group Icon" />
+						</div>
+						<p>Onifade Kehinde</p>
+						<div class="user-profile">
+							<div class="profile">
+								<h5>Full Name</h5>
+								<p>Kehinde Onifade</p>
+							</div>
+							<div class="profile">
+								<h5>Username</h5>
+								<p>RideOnOne</p>
+							</div>
+							<div class="profile">
+								<h5>Gender</h5>
+								<p>Male</p>
+							</div>
+							<div class="profile">
+								<h5>Address</h5>
+								<p>No 23, Church Street, Mushin</p>
+								<button>Edit</button>
+							</div>
+							<div class="profile">
+								<h5>Phone Number</h5>
+								<p>+2348060119837</p>
+								<button>Edit</button>
+							</div>
+							<div class="profile">
+								<h5>Email</h5>
+								<p>rideonone@gmail.com</p>
+								<button>Edit</button>
+							</div>
+							<div class="profile">
+								<h5>Password</h5>
+								<p>***********</p>
+								<button>Edit</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<div class="modal" id="library">
+			<section class="popup__container">
+				<h1>Library</h1>
+				<img src="./assets/images/times.svg" alt="" class="hamburger" />
+				<div class="links">
+					<a href="#">Frequently Asked Questions</a>
+					<a href="#">About Us</a>
+					<a href="#">Terms Of Use</a>
+					<a href="#">Privacy Policy</a>
+					<a href="#">About Us</a>
+					<a href="#">Pricing & Charges</a>
+					<a href="#">Contact Us</a>
+					<a href="#">Reviews</a>
+				</div>
+			</section>
+		</div>
+		<div class="modal" id="quick__save">
+			<section class="popup__container">
+				<img src="./assets/images/times.svg" alt="" id="close4" class="hamburger" />
+				<h1>Quick Save</h1>
+				<p>
+					You have no registered card on your account. Add a debit card to be used for wallet top-up
+					and cohort payment
+				</p>
+				<form action="" id="quick-save-form" class="forms" name="quick-save-form" onsubmit="return validateSave(event)">
+					<div class="quick__save">
+						<select class="debit__card" name="destination">
+							<option value="choose">Select mode of savings</option>
+							<option value="debit1">Make savings from wallet</option>
+							<option value="debit2">Make savings from bank account</option>
+						</select>
+						<input
+							type="text"
+							name="save"
+							id="save"
+							class="input"
+							placeholder="Enter Amount to Save"
+						/>
+						<div class="bank__details">
+							<select class="debit__card" name="destination">
+								<option value="choose">Select Debit Card</option>
+								<option value="debit1">Card1</option>
+								<option value="debit2">Card2</option>
+							</select>
+							<button type="submit" class="button">Make Payment</button>
+						</div>
+					</div>
+				</form>
+			</section>
+		</div>
+		<div class="modal" id="quick__withdrawal">
+			<section class="popup__container">
+				<h1>Withdrawal</h1>
+				<img src="./assets/images/times.svg" alt="" class="hamburger" />
+				<div class="withdraw__funds">
+					<h2>Withdraw Funds</h2>
+					<div class="withdraw__intro">
+						<h3>Available Balance &#8358;50,000</h3>
+						<p>Withdraw anytime without penalty</p>
+						<button class="button" id="request-withdrawal">Request Withdrawal</button>
+					</div>
+					<div class="withdraw__account">
+						<h4>My Withdrawal Account</h4>
+						<p>Okoroji Victor</p>
+						<p>3434343434 - First bank</p>
+						<button class="button">Update Bank</button>
+					</div>
+				</div>
+			</section>
+			<section class="popup__container" id="withdraw__contribution">
+				<h1>Withdraw</h1>
+				<div class="avatar">
+					<img src="./assets/images/avatar2 2.jpg" alt="Group Icon" id="avatar__img" />
+				</div>
+				<h2>
+					Wallet Balance <br />
+					&#8358;115,400</h2
+				>
+				<form action="" id="withdraw-form" class="forms" name="withdraw-form" onsubmit="return validateWithdraw(event)">
+					<div class="withdraw__form">
+						<input type="text" class="input" id="amount" placeholder="Amount to withdraw" />
+						<input type="text" class="input" id="phone" placeholder="Enter phone number to generate OTP" />
+						<input type="password" id="password" placeholder="Enter password" class="input" />
+						<button type="submit" class="button">Withdraw Fund</button>
+					</div>
+				</form>
+			</section>
+		</div>
+		<div class="modal" id="fund__wallet">
+			<section class="popup__container">
+				<img src="./assets/images/times.svg" alt="" class="hamburger" id="close1" />
+				<h1>Fund Wallet</h1>
+				<div class="avatar">
+					<img src="./assets/images/avatar2 2.jpg" alt="Group Icon" id="avatar__img" />
+				</div>
+				<h2>Wallet Balance &#8358;115,400</h2>
+				<form action="" onsubmit="return validateFundWallet(event)">
+					<div class="withdraw__form">
+						<input type="text" id="amount" placeholder="Enter Amount" class="input" />
+						<select class="debit__card" name="destination">
+							<option value="choose">Fund Wallet From</option>
+							<option value="Bank Account">Bank Account</option>
+						</select>
+						<select class="debit__card" name="destination">
+							<option value="choose">Select a debit card</option>
+							<option value="debit1">Debit1</option>
+							<option value="debit2">Debit2</option>
+						</select>
+						<button type="submit" class="button">Make Payment</button>
+					</div>
+				</form>
+			</section>
+		</div>
+		<div class="modal" id="add__bvn">
+			<section class="popup__container">
+				<img src="./assets/images/times.svg" alt="" class="hamburger" id="close2" />
+				<h1>Update Bank details</h1>
+				<p>
+					Your BVN is used to verify your identity. You will only be able to withdraw money into
+					bank account connected to the BVN provided
+				</p>
+				<form action="" id="bvn-form" onsubmit="return validateBVN(event)">
+					<input type="text" placeholder="Enter bvn" id="bvn" class="input" />
+					<input type="submit" value="Verify BVN" class="button" />
+				</form>
+			</section>
+		</div>
+		<div class="modal" id="add__debitcard">
+			<section class="popup__container">
+				<img src="./assets/images/times.svg" alt="" class="hamburger" id="close6" />
+				<h1>Add Debit Card</h1>
+				<form action="" id="card-form" onsubmit="return validateCard(event)">
+					<div class="card__input">
+						<p>Enter your card details here</p>
+						<input type="text" id="account-name" placeholder="Account Name" class="input" />
+						<input type="text" id="account-number" placeholder="Account Number" class="input" />
+						<input type="text" id="card-number" placeholder="Card Numbers" class="input" />
+					</div>
+					<div class="expry__and__cvv_container">
+						<input type="text" id="expiry" placeholder="Card Expiry" class="input" />
+						<input type="text" id="cvv" placeholder="Cvv" class="input" />
+					</div>
+					<button type="submit" class="button" id="demo">Save Card</button>
+				</form>
+			</section>
+		</div>
+		<div class="modal" id="add-bank-account">
+			<section class="popup__container">
+				<img src="./assets/images/times.svg" alt="" class="hamburger" id="close3" />
+				<h1>Add bank account <span>(Withdrawal Account)</span></h1>
+				<p> This is where your funds will be sent upon Withdrawal, Funds are sent instantly. </p>
+				<div class="bank__details">
+					<div class="dropdown">
+						<label for="default__account">Select default bank account</label>
+						<select name="Default Bank Account" id="default__account">
+							<option value="zenith">Zenit</option>
+							<option value=" UBA">UBA</option>
+							<option value="Access">Access</option>
+							<option value="Kuda">First</option>
+						</select>
+						<p
+							>Add a new bank account here <br />
+							<span>(You must have added a debit card corresponding to the bank account) </span></p
+						>
+						<form action="" id="bank-form" onsubmit="return bankValidation(event)">
+						<input type="text" placeholder="Enter Your Account Number" id="bank-account" class="input" />
+							<input type="text" placeholder="Enter Your BVN" id="bank-bvn" class="input" />
+							<button type="submit" class="button">Add Bank</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="notification__container">
+    <section  class="notification">
+        <h1>Notification</h1>
+        <div class="notification__image">
+            <img src="./assets/images/Vector.svg" alt="">
+            <img src="./assets/images/arrow.svg" alt="" class="close-notification-btn" >
+        </div>
+    </section>
+  </div>
+
+	<div class="modal confirmation_modal" id="logout_confirmation">
+		<div class="modal_position">
+			<section class="popup__container">
+				<!-- <h1>Logout Confirmation</h1> -->
+				<p>Confirm that you wish to Log Out</p>
+				<div class="confirm_action">
+					<button id="no" onclick="confirm_logout(event)">No</button>
+					<button id="yes" onclick="confirm_logout(event)">Yes</button>
+				</div>
+				
+			</section>
+		</div>
+	</div>
+
+	<script src="./scripts/modal.js"></script>
+	<script src="./scripts/validation.js"></script>
+		<script src="./scripts/dashboard.js"></script>
+		<script src="./scripts/account.js"></script>
+
+	</body>
+</html>

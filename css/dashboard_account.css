@@ -1,0 +1,125 @@
+@font-face {
+	font-family: 'Poppins Regular';
+	src: url(../assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+	font-family: 'Poppins Semi-Bold';
+	src: url(../assets/fonts/Poppings/Poppins-SemiBold.ttf);
+}
+@font-face {
+	font-family: 'Poppins Light';
+	src: url(../assets/fonts/Poppins-Light.ttf);
+}
+@font-face {
+	font-family: 'Poppins-Bold';
+	src: url(../assets/fonts/Poppins-Bold.ttf);
+}
+:root {
+	--fontsize: 16px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+
+	/* primary color */
+	--whitish_grey: #fbf9f9;
+	--black: #000000;
+	--grey: #808080;
+	--white: #fffcfc;
+	--dark_purple: #211445;
+	/* secondary color */
+	--pink: #dc5792;
+}
+
+.dashboard-top p {
+	font-weight: bold;
+}
+.dashboard-top p a {
+	color: var(--pink);
+}
+.account{
+    margin-bottom: 1rem;
+      box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+.account .account-btn {
+	color: var(--pink);
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    z-index: 1;
+	border: none;
+	outline: none;
+	background: none;
+}
+.account-btn:hover{
+	color: var(--white);
+}
+.account a{
+	color: var(--pink);
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    z-index: 1;
+	border: none;
+	outline: none;
+	background: none;
+}
+.account p{
+    font-size: 0.9rem;
+    padding: 5px 10px;
+}
+.account p a {
+	color: var(--dark_purple);
+}
+.account-profile{
+    display: flex;
+    justify-content: space-between;
+}
+.account-container{
+    margin-right: 2rem;
+}
+.account-container .list-grid-entry-body{
+	background-color: var(--dark_purple);
+	color: white;
+	border-radius: 10px;
+}
+.account-info {
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    padding: 10px 15px;
+	background-color: var(--dark_purple);
+	color: white;
+	border-radius: 10px;
+}
+.account-info h3{
+    text-align: center;
+    margin-bottom:20px ;
+}
+.user-profile {
+	padding: 0 1rem;
+	margin-top: 1rem;
+}
+.profile {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+	border-bottom: 1px solid #bcace7;
+	padding-bottom: 10px;
+}
+.profile:nth-child(7) {
+	border-bottom: none;
+}
+.profile p {
+	margin: 0 1rem 0 3rem;
+	color: var(--pink);
+	font-size: 0.8rem;
+}
+.profile button {
+	background-color: white;
+	border: none;
+	box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+	width: 50px;
+	height: 20px;
+	border-radius: 5px;
+}
+.profile button:hover{
+	color: var(--white);
+	background-color: var(--dark_purple);
+}

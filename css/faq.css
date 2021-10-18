@@ -1,0 +1,138 @@
+#search_faq {
+	background: linear-gradient(0.25turn, #efece9, #fff);
+}
+
+#search_faq {
+	padding: 100px 60px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 10px;
+}
+#search_faq label {
+	text-align: center;
+	font-size: 2rem;
+	text-transform: capitalize;
+	font-weight: 700;
+	word-spacing: 5px;
+}
+.my_input {
+	text-align: center;
+}
+#search_faq input {
+	width: 50rem;
+	padding: 20px 10px;
+	border-radius: 10px;
+	outline: none;
+	border: 1px solid rgb(204, 200, 200);
+}
+::placeholder {
+	font-size: 15px;
+}
+#question_and_answer {
+	padding: 120px 0;
+	margin: auto;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	gap: 10em;
+}
+
+.questions {
+	padding-right: 2rem;
+	border: 1px solid rgb(204, 200, 200);
+	border-radius: 5px;
+	line-height: 3;
+	padding: 2rem 0;
+}
+ul li {
+	list-style: none;
+}
+ 
+/*  CSS ACCORDION */
+summary{
+    font-size: 1.255rem;
+    font-weight: 600;
+    color:#211445 ;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    outline: none;
+    /* border-radius: 0.25rem; */
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+    
+
+}
+
+.answer{
+    padding: 3% 0 5% 3%;
+    background-color:#211445 ;
+    border-radius: 10px  ;
+}
+.answer p{
+    color: #fff;
+}
+details{
+    width: 40rem;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #211445 ;
+}
+details[open] summary ~ *{
+    animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+    0% {opacity: 0;
+    margin-top: -10px;
+}
+100%{
+    opacity:1;
+    margin-top: 0px;
+}
+}
+details>summary::after{
+    position: absolute;
+    content: "+";
+     left: 38rem;
+     font-size: 1.2em;
+}
+
+details[open]>summary::after{
+    position: absolute;
+    content: "-";
+}
+
+details > summary::-webkit-details-marker{
+    display: none;
+}
+
+/*  END OF CSS ACCORDION */
+
+
+section#started{
+    padding: 0 100px 50px 100px;
+    background-color: #fbf9f9;
+    
+}
+#started .heading{
+    color: #000;
+    font-weight: 800;
+     font-size: 2.5em; 
+}
+.questions li {
+	text-align: justify;
+	padding: 5px 20px;
+	text-transform: capitalize;
+	color: #211445;
+	font-weight: 600;
+}
+.questions li:hover {
+	background-color: #211445;
+	color: #fff;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+	cursor: pointer;
+}

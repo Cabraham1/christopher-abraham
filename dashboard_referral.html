@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- document title icon of varying sizes-->
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/assets/images/favicon_io/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/assets/images/favicon_io/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/assets/images/favicon_io/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="/site.webmanifest" />
+		<!-- css stylesheet -->
+		<link rel="stylesheet" href="./css/pop_ups.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/login_signup.css" />
+		<link rel="stylesheet" href="./css/dashboard_home.css" />
+		<link rel="stylesheet" href="./css/dashboard_referral.css" />
+		<title>MoneyBox | Referral</title>
+	</head>
+	<body>
+		<nav>
+			<div class="top-bar">
+				<a href="#">?</a>
+				<a href="#" class="account-btn">Library</a>
+				<a href="#" id="notification-btn"
+					><img src="./assets/images/bell_icon.png" alt="Notification Icon"
+				/></a>
+				<a href="./dashboard_account.html" id="username_display">Okoroji Vic</a>
+				<a href="./dashboard_account.html"
+					><div class="rounded-border"
+						><img src="./assets/images/avatar2 2.jpg" alt="Victor's Portrait" /></div
+				></a>
+			</div>
+			<div class="nav-bar-left">
+				<header>
+					<div class="hamburger">
+						<div class="harm-bars"></div>
+						<div class="harm-bars"></div>
+						<div class="harm-bars"></div>
+					</div>
+					<div class="name-n-logo">
+						<a href="./index.html"><img src="./assets/images/logo.png" alt="MoneyBox Logo" /></a>
+						<h1><a href="./index.html">MoneyBox</a></h1>
+					</div>
+				</header>
+				<div class="nav-item">
+					<img src="./assets/images/home-icon.svg" alt="Home Icon" />
+					<a href="./dashboard_home.html">Home</a>
+				</div>
+				<div class="nav-item">
+					<img src="./assets/images/cohort-group.svg" alt="Cohort Group Icon" />
+					<a href="./dashboard_cohort.html">Cohorts</a>
+				</div>
+				<div class="nav-item">
+					<img src="./assets/images/account_icon.svg" alt="Account Icon" />
+					<a href="./dashboard_account.html">Account</a>
+				</div>
+				<div class="nav-item active">
+					<img src="./assets/images/referrals.svg" alt="Referral Icon" />
+					<a href="./dashboard_referral.html">Referrals</a>
+				</div>
+				<div class="nav-item">
+					<img src="./assets/images/History.svg" alt="History Icon" />
+					<a href="./dashboard_history.html">History</a>
+				</div>
+
+				<div class="nav-item" id="logout">
+					<img src="./assets/images/logout-icon.svg" alt="Logout Icon" />
+					<a href="#">Logout</a>
+				</div>
+			</div>
+		</nav>
+		<main>
+			<h1>Referral Balance: &#8358; 5,500:</h1>
+			<section class="cards">
+				<div class="card">
+					<h2>Refer and Earn Forever</h2>
+					<div class="microCard">
+						<p>
+							Help your loved ones achieve financial freedom by inviting them to join moneybox and
+							get 0.5% of their cohort cashout forever
+						</p>
+					</div>
+					<a href="#" class="cardBtn">Generate Invite Link</a>
+				</div>
+				<div class="card">
+					<h4>Referral List</h4>
+					<ol class="numberList">
+						<li>Efe Akingbe</li>
+						<li>Emmanuel Orji</li>
+					</ol>
+					<a href="#" class="cardBtn">View referral Earnings</a>
+				</div>
+			</section>
+		</main>
+		<div class="modal" id="library">
+			<section class="popup__container">
+				<h1>Library</h1>
+				<img src="./assets/images/times.svg" alt="" class="hamburger" />
+				<div class="links">
+					<a href="#">Frequently Asked Questions</a>
+					<a href="#">About Us</a>
+					<a href="#">Terms Of Use</a>
+					<a href="#">Privacy Policy</a>
+					<a href="#">About Us</a>
+					<a href="#">Pricing & Charges</a>
+					<a href="#">Contact Us</a>
+					<a href="#">Reviews</a>
+				</div>
+			</section>
+		</div>
+		<div class="notification__container">
+			<section class="notification">
+				<h1>Notification</h1>
+				<div class="notification__image">
+					<img src="./assets/images/Vector.svg" alt="" />
+					<img src="./assets/images/arrow.svg" alt="" class="close-notification-btn" />
+				</div>
+			</section>
+		</div>
+
+		<div class="modal confirmation_modal" id="logout_confirmation">
+      <div class="modal_position">
+        <section class="popup__container">
+          <!-- <h1>Logout Confirmation</h1> -->
+          <p>Confirm that you wish to Log Out</p>
+          <div class="confirm_action">
+            <button id="no" onclick="confirm_logout(event)">No</button>
+            <button id="yes" onclick="confirm_logout(event)">Yes</button>
+          </div>
+          
+        </section>
+      </div>
+    </div>
+
+		<script src="./scripts/modal.js"></script>
+		
+	</body>
+	<script src="./scripts/dashboard.js"></script>
+</html>

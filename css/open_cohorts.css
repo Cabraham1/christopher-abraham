@@ -1,0 +1,33 @@
+.wrapper{
+    	background: linear-gradient(0.25turn, #efece9, #fff);
+        margin-top: 3rem;
+}
+
+.search__title {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	flex-direction: column;
+	gap: 40px;
+    margin-bottom: 5rem;
+}
+.search__title h1 {
+	text-align: center;
+	font-size: 2rem;
+    text-transform: uppercase;
+	font-weight: 700;
+	word-spacing: 5px;
+}
+.my_input {
+	text-align: center;
+}
+.search__title input {
+	width: 65em;
+	padding: 20px 10px;
+	border-radius: 10px;
+	outline: none;
+	border: 1px solid rgb(204, 200, 200);
+}
+::placeholder {
+	font-size: 15px;
+}

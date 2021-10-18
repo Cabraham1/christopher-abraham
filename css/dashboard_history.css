@@ -1,0 +1,86 @@
+main h1 {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+}
+.cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card  {
+  background-color: #211445;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 1rem;
+}
+ .card a {
+  color: white;
+  font-size: 0.6rem;
+  text-align: center;
+  display: block;
+}
+ .card h3 {
+  color: white;
+  text-align: center;
+  margin: 1rem;
+  font-size: 0.9rem;
+}
+.history {
+  margin-bottom: 1rem;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.history span {
+  color: var(--pink);
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  z-index: 1;
+}
+.history p {
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  color: white;
+}
+.history p a {
+  color: var(--dark_purple);
+}
+
+/* START LOADER STYLES */
+ .cohort__loader {
+  display: none;
+} 
+
+.load {
+  margin: auto;
+  text-align: center;
+  border: 7px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 7px solid hotpink;
+  display: block;
+  border-right: 7px solid hotpink;
+  width: 40px;
+  height: 40px;
+  -webkit-animation: spin 1s linear infinite; /* Safari */
+  animation: spin 1s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* END LOADER STYLES */
